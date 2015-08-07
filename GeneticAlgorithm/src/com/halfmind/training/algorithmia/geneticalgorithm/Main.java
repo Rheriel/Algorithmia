@@ -25,6 +25,8 @@ public class Main {
 		while (myPopulation.getFittest().getFitness() < FitnessCalculator.getMaxFitness()) {
 			generationCount++;
 			System.out.println("Generation: " + generationCount + " Fittest: " + myPopulation.getFittest().getFitness());
+			System.out.println("Genes: ");
+			System.out.println(myPopulation.getFittest());
 			myPopulation = Algorithm.evolvePopulation(myPopulation);
 		}
 		System.out.println("Solution found!");
