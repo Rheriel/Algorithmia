@@ -21,8 +21,8 @@ public class City {
 	 * Constructs a randomly placed city.
 	 */
 	public City(){
-		this.x = ((int)(Math.random() * 200));
-		this.y = ((int)(Math.random() * 200));
+		this.x = (int)(Math.random() * 200);
+		this.y = (int)(Math.random() * 200);
 	}
 
 	/**
@@ -36,11 +36,11 @@ public class City {
 	}
 
 	public int getX() {
-		return x;
+		return this.x;
 	}
 
 	public int getY() {
-		return y;
+		return this.y;
 	}
 	
 	/**

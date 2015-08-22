@@ -65,7 +65,7 @@ public class GeneticAlgorithm {
 		// Create new child tour.
 		Tour child = new Tour();
 		
-		// Gets a new child in tour.
+		// Gets start and end sub tour positions for parent1's tour.
 		int startPos = (int) (Math.random() * parent1.tourSize());
 		int endPos = (int) (Math.random() * parent1.tourSize());
 		

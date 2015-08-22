@@ -64,7 +64,7 @@ public class Tour {
 	 * @param city
 	 */
 	public void setCity(int tourPosition, City city){
-		tour.add(tourPosition, city);
+		tour.set(tourPosition, city);
 		// If the tour has been altered, we need to reset the fitness and distance.
 		fitness = 0;
 		distance = 0;
