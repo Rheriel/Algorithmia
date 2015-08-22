@@ -70,7 +70,21 @@ public class Tour {
 		distance = 0;
 	}
 	
-	// Gets the total distance of the tour.
+	/**
+	 * Gets the tour's fitness.
+	 * @return
+	 */
+	public double getFitness(){
+		if (fitness == 0){
+			fitness = 1/(double)getDistance();
+		}
+		return fitness;
+	}
+	
+	/**
+	 * Gets the total distance of the tour.
+	 * @return
+	 */
 	public int getDistance(){
 		if (distance == 0){
 			int tourDistance = 0;
